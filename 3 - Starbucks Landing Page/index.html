@@ -8,6 +8,9 @@
 </head>
 <body>
     <section>
+        <div class="circle">
+
+        </div>
         <header>
             <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
             <ul>
@@ -28,15 +31,15 @@
             </div>
 
             <div class="imgBox">
-                <img src="images/img1.png" alt="startBucks">
+                <img src="images/img1.png" alt="startBucks" class="starbucks">
             </div>
 
         </div>
 
         <ul class="thumb">
-            <li><img src="images/thumb1.png" alt="Thumb1"></li>
-            <li><img src="images/thumb2.png" alt="Thumb2"></li>
-            <li><img src="images/thumb3.png" alt="Thumb3"></li>
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');" alt="Thumb1"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');" alt="Thumb2"></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');" alt="Thumb3"></li>
         </ul>
 
         <ul class="sci">
@@ -47,5 +50,12 @@
         </ul>
 
     </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+    </script>
+
 </body>
 </html>
