@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>StarBuks | Home</title>
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+    
+    
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br> It's <span>StarBuks</span></h2>
+                <p><strong>Enjoy summer savings with DashPass</strong><br><br>
+                    Now is a great time to save with DashPass. Enjoy $10 off Starbucks orders of $20+ on DoorDash. Offer valid 7/13-7/19 from 12 p.m. – 3 p.m. only. Max discount of $10.**</p>
+                <a href="#">Order Now</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="images/img1.png" alt="startBucks" class="starbucks">
+            </div>
+
+        </div>
+
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeCircleColor('#017143');" alt="Thumb1"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeCircleColor('#eb7495');" alt="Thumb2"></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); changeCircleColor('#d752b1');" alt="Thumb3"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        // function for change circle color
+        function changeCircleColor(color){
+            const circle =document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+
+</body>
+</html>
