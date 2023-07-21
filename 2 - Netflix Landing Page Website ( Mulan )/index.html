@@ -36,20 +36,28 @@
                 <span>1h 55min</span>
                 <span>Action</span>
             </h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, distinctio minima aliquid omnis dolore, nam cum quasi iusto cupiditate accusantium consequuntur nihil adipisci at ut optio commodi natus, quia non.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, distinctio minima aliquid omnis dolore, nam cum quasi iusto cupiditate accusantium consequuntur nihil adipisci at ut optio commodi natus, quia non.</p>
+            <p>In this thrilling live-action adaptation, "Mulan - A Legendary Warrior's Journey," follow the courageous and determined Hua Mulan on her epic quest to become a legendary warrior and save her family and her kingdom. <br><br>
+
+                Set in ancient China, Mulan is a spirited and independent young woman, bound by tradition and societal expectations. When the Emperor issues an edict conscripting one man from every family to join the Imperial Army to defend the realm against an impending invasion, Mulan faces a heart-wrenching decision. Unwilling to see her elderly father, Fa Zhou, go to war and risk his life, she disguises herself as a man and takes his place, embracing her true destiny.</p>
             <div class="buttons">
                 <a href="#"><i class="bi bi-play-fill"></i>Play</a>
                 <a href="#"><i class="bi bi-plus-lg"></i>My List</a>
                 
             </div>
         </div>
-        <a href="#" class="play"><img src="images/play.png" alt="play">Watch Trailer</a>
+        <a class="play" onclick="toggleVideo();"><img src="images/play.png" alt="play">Watch Trailer</a>
     </div>
     <div class="trailer">
         <video src="vedios/Disney's Mulan - Official Teaser.mp4" controls='true' autoplay='true'></video>
-        <img src="images/close.png" alt="Close" class="close">
+        <img src="images/close.png" alt="Close" class="close" onclick="toggleVideo();">
     </div>
 
-    
+    <!-- Import js file -->
+    <script>
+        function toggleVideo() {
+            const trailer = document.querySelector('.trailer');
+            trailer.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
