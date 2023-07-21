@@ -26,8 +26,9 @@
         <div class="content">
             <div class="textBox">
                 <h2>It's not just Coffee <br> It's <span>StarBuks</span></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptate ex omnis reprehenderit dolorum vero deserunt illum architecto, odio necessitatibus soluta placeat repudiandae quia eos modi, assumenda tempore laudantium consequuntur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptate ex omnis reprehenderit dolorum vero deserunt illum architecto, odio necessitatibus soluta placeat repudiandae quia eos modi, assumenda tempore laudantium consequuntur.</p>
-                <a href="#">Learn More</a>
+                <p><strong>Enjoy summer savings with DashPass</strong><br><br>
+                    Now is a great time to save with DashPass. Enjoy $10 off Starbucks orders of $20+ on DoorDash. Offer valid 7/13-7/19 from 12 p.m. – 3 p.m. only. Max discount of $10.**</p>
+                <a href="#">Order Now</a>
             </div>
 
             <div class="imgBox">
@@ -37,9 +38,9 @@
         </div>
 
         <ul class="thumb">
-            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png');" alt="Thumb1"></li>
-            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png');" alt="Thumb2"></li>
-            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png');" alt="Thumb3"></li>
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeCircleColor('#017143');" alt="Thumb1"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeCircleColor('#eb7495');" alt="Thumb2"></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); changeCircleColor('#d752b1');" alt="Thumb3"></li>
         </ul>
 
         <ul class="sci">
@@ -55,6 +56,12 @@
         function imgSlider(anything){
             document.querySelector('.starbucks').src = anything;
         }
+
+        function changeCircleColor(color){
+            const circle =document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
     </script>
 
 </body>
